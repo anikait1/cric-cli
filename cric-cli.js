@@ -51,12 +51,6 @@ const getScore = async (matchID) => {
   console.log(`Summary: ${score}`);
 };
 
-const getScorecard = async (matchID) => {
-  const scorecardUrl = `${URL}/${routes.SCORECARD}?apikey=${API_KEY}&unique_id=${matchID}`
-  const response = await fetch(scoreUrl);
-  const data = await response.json();
-}
-
 yargs
   .scriptName("cric-cli")
   .usage("$0 <cmd> [args]")
